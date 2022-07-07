@@ -12,6 +12,13 @@ const jump = () => {
 
 };
 
+const pageReload = () => {
+
+  location.reload();
+  return false;
+
+};
+
 const loop = setInterval(() => {
 
   const pipePosition = pipe.offsetLeft;
@@ -30,6 +37,7 @@ const loop = setInterval(() => {
     mario.style.marginLeft = '50px';
 
     clearInterval(loop);
+    document.addEventListener('click', pageReload)
   }
 
 }, 10);
