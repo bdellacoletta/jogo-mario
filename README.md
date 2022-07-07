@@ -1,1 +1,1 @@
-# Game - Mario Jump - Manual do Dev
+# Game - Mario Jump 
