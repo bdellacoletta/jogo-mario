@@ -46,3 +46,5 @@ const loop = setInterval(() => {
 }, 10);
 
 document.addEventListener('keydown', jump);
+
+// a fazer para o score -> se o pipe passar pelo mario e o jogo não parar então um contador soma mais um a variável score
