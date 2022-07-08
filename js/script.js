@@ -26,11 +26,7 @@ const loop = setInterval(() => {
   const pipePosition = pipe.offsetLeft;
   const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-  if (pipePosition > 120 && pipePosition < 0 && marioPosition > 80) {
-    score += 1;
-  }
-
-  else if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+  if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 
     pipe.style.animation = 'none';
     pipe.style.left = `${pipePosition}px`;
@@ -43,11 +39,9 @@ const loop = setInterval(() => {
     mario.style.marginLeft = '50px';
 
     clearInterval(loop);
-    finalScore.innterHTML = "Your score is " + score;
+    finalScore.innerHTML = "Your score is " + score;
     document.addEventListener('click', pageReload)
   }
-
-
 
 }, 10);
 
