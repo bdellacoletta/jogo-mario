@@ -4,3 +4,6 @@
 <p>É só apertar qualquer tecla para que o Mario pule e passe pelo tubo.</p>
 <p>O jogo acaba quando o Mario não consegue passar pelo obstáculo.</p> 
 <p>Para reiniciar basta um click no mouse.</p>
+<br>
+<h1> A ser implementado:</h1>
+<p>Contagem de pontos (score)</p>
