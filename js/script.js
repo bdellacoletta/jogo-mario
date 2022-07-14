@@ -1,7 +1,5 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
-const finalScore = document.querySelector('.score')
-var score = 0;
 
 const jump = () => {
   mario.classList.add('jump');
@@ -39,7 +37,7 @@ const loop = setInterval(() => {
     mario.style.marginLeft = '50px';
 
     clearInterval(loop);
-    finalScore.innerHTML = "Your score is " + score;
+
     document.addEventListener('click', pageReload)
   }
 
